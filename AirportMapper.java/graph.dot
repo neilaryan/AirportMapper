@@ -1,0 +1,11 @@
+graph airportGraph{
+        "O'Hare" -- "JFK"[label = 300];
+        "Logan" -- "JFK"[label = 100];
+        "LAX" -- "O'Hare" [label = 400];
+        "Fort Worth" -- "O'Hare" [label = 300];
+        "Fort Worth" -- "ORD"[label = 250];
+        "LAX" -- "Fort Worth"[label = 350];
+        "JFK" -- "ORD"[label = 350];
+        "Raleigh-Durham" -- "JFK"[label = 150];
+        "Raleigh-Durham" -- "ORD"[label = 200];
+}
