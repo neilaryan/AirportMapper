@@ -11,7 +11,9 @@ public class GraphLoader {
     airportGraph = new graph<>();
     new Scanner(System.in);
   }
-
+  /**This method allows for a user to input a DOT file in txt format to be read and converted into a simple graph.
+  *  This graph is intended to then be used as a mapper of landmarks, such as airports. 
+  */
   public graph<String, Double> loadGraph(String filepathToDot) throws FileNotFoundException {
     Scanner scnr = new Scanner(new File(filepathToDot));
     new ArrayList<>();
@@ -36,7 +38,7 @@ public class GraphLoader {
     return airportGraph;
   }
   public static void main(String[] args) throws FileNotFoundException {
-
+    //arbitrary paths
     GraphLoader newLoader = new GraphLoader("/workspaces/codespaces-blank/GraphLoader.java/graph.dot");
     newLoader.loadGraph("/workspaces/codespaces-blank/GraphLoader.java/graph.dot");
   }
